@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookers2</title>
+    <title>Bookers3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -37,9 +37,9 @@
                 <% end %>
               </li>
               <li>
-                <%= link_to destroy_user_session_path, method: :delete, class: "nav-link text-light" do %>
+                <%= link_to destroy_user_session_path, class: "nav-link text-light", method: :delete do %>
                 <i class="fas fa-sign-out-alt"></i>
-                Log out
+                logout
                 <% end %>
               </li>
             <% else %>
@@ -58,13 +58,13 @@
               <li>
                 <%= link_to new_user_registration_path, class: "nav-link text-light" do %>
                 <i class="fas fa-user-plus"></i>
-                Sign up
+                sign up
                 <% end %>
               </li>
               <li>
                 <%= link_to new_user_session_path, class: "nav-link text-light" do %>
                 <i class="fas fa-sign-in-alt"></i>
-                Log in
+                login
                 <% end %>
               </li>
             <% end %>

@@ -174,3 +174,12 @@ div.field, div.actions {
 #notice {
     color: green;
 }
+
+/*favorite*/
+.heartCount {
+    color: red;
+}
+
+.heartUncount {
+    color: blue;
+}
